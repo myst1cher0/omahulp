@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulpmiddelen</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #f0f4ff 0%, #f8fafc 100%);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            letter-spacing: -0.025em;
+        }
+
+        p.subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        .menu-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .card-link {
+            background-color: var(--card-bg);
+            padding: 24px 28px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            text-decoration: none;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px -3px rgba(37, 99, 235, 0.1), 0 4px 6px -4px rgba(37, 99, 235, 0.1);
+            border-color: var(--primary);
+        }
+
+        .card-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-align: left;
+        }
+
+        .icon {
+            font-size: 2.2rem;
+            background: #eff6ff;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+        }
+
+        .text-group h2 {
+            font-size: 1.25rem;
+            margin: 0 0 4px 0;
+            color: var(--text-main);
+        }
+
+        .text-group span {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .arrow {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            transition: transform 0.2s ease;
+        }
+
+        .card-link:hover .arrow {
+            transform: translateX(4px);
+            color: var(--primary);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hulpmiddelen</h1>
+        <p class="subtitle">Kies hieronder de handleiding die je wilt openen.</p>
+
+        <div class="menu-grid">
+            <!-- Tablet Hulp Link -->
+            <a href="tablet/" class="card-link">
+                <div class="card-content">
+                    <div class="icon">💻</div>
+                    <div class="text-group">
+                        <h2>Tablet Hulp</h2>
+                        <span>Uitgebreide hulp voor de tablet.</span>
+                    </div>
+                </div>
+                <div class="arrow">➔</div>
+            </a>
+            <a href="telefoon/" class="card-link">
+            <div class="card-content">
+                <div class="icon">📱</div>
+                <div class="text-group">
+                    <h2>Telefoon Hulp</h2>
+                    <span>Uitgebreide hulp voor de telefoon.</span>
+                </div>
+            </div>
+            <div class="arrow">➔</div>
+        </a>
+
+            <!-- Hier kun je in de toekomst makkelijk een extra kaartje bijplaatsen -->
+        </div>
+
+        <footer>
+            Gemaakt voor snelle en duidelijke ondersteuning.
+        </footer>
+    </div>
+
+</body>
+</html>
